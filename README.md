@@ -1,1 +1,1 @@
-`cordova plugin add https://github.com/twogate/cordova-plugin-browsertab.git --variable CUSTOM_TAB_COLOR_RGB="#0d0d0d" --variable CUSTOM_TAB_PCT_COLOR_RGB="#db3373" --variable CUSTOM_TAB_PBT_COLOR_RGB="#0d0d0d"`
+`cordova plugin add https://github.com/twogate/cordova-plugin-browsertab.git`

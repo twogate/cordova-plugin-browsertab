@@ -16,10 +16,6 @@
         <clobbers target="cordova.plugins.browsertab" />
     </js-module>
   
-    <preference name="CUSTOM_TAB_COLOR_RGB" default="#0D0D0D" />
-    <preference name="CUSTOM_TAB_PCT_COLOR_RGB" default="#DB3373" />
-    <preference name="CUSTOM_TAB_PBT_COLOR_RGB" default="#0D0D0D" />
-  
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="BrowserTab">
@@ -32,12 +28,6 @@
         <framework src="com.android.support:customtabs:23.3.0"/>
         <framework src="src/android/BrowserTab.gradle" custom="true" type="gradleReference"/>
   
-        <source-file src="src/android/res/browsertab.xml" target-dir="res/values" />
-        <config-file target="res/values/browsertab.xml" parent="/*">
-          <string name="CUSTOM_TAB_COLOR_RGB">$CUSTOM_TAB_COLOR_RGB</string>
-          <string name="CUSTOM_TAB_PCT_COLOR_RGB">$CUSTOM_TAB_PCT_COLOR_RGB</string>
-          <string name="CUSTOM_TAB_PBT_COLOR_RGB">$CUSTOM_TAB_PBT_COLOR_RGB</string>
-        </config-file>
     </platform>
 
     <platform name="ios">
@@ -46,11 +36,6 @@
                 <param name="ios-package" value="CBTBrowserTab" />
             </feature>
         </config-file>
-		<config-file target="config.xml" parent="widget">
-			<preference name="CUSTOM_TAB_COLOR_RGB" value="$CUSTOM_TAB_COLOR_RGB" />
-			<preference name="CUSTOM_TAB_PCT_COLOR_RGB" value="$CUSTOM_TAB_PCT_COLOR_RGB" />
-			<preference name="CUSTOM_TAB_PBT_COLOR_RGB" value="$CUSTOM_TAB_PBT_COLOR_RGB" />
-		</config-file>
 
         <header-file src="src/ios/CBTBrowserTab.h" />
         <source-file src="src/ios/CBTBrowserTab.m" />
