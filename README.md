@@ -9,3 +9,7 @@ config.xml
     <preference name="CustomTabPctColorRGB" value="#DB3373" />
     <preference name="CustomTabPbtColorRGB" value="#0D0D0D" />
 ```
+
+# note
+
+This plugin requires minSdkVersion > 16 on Android.
